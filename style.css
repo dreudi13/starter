@@ -1,0 +1,14 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh; }
+
+body {
+  color: #EDCE33;
+  background-color: #3E6375; }
+
+header {
+  display: inline-block;
+  width: 45%;
+  height: 100%;
+  background-color: #EDCE33; }

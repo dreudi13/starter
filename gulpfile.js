@@ -32,13 +32,13 @@ gulp.task('default', ['sass'], function() {
     // notify: false,
     server: { baseDir: './' }
   });
-  gulp.watch('/scss/**/*.scss', ['sass']).on('change', function(event) {
+  gulp.watch('./scss/**/*.scss', ['sass']).on('change', function(event) {
     console.log('le fichier '+ event.path +' a été modifié')
   });
-  gulp.watch('/*.html').on('change', browserSync.reload).on('change', function(event) {
+  gulp.watch('./*.html').on('change', browserSync.reload).on('change', function(event) {
     console.log('le fichier '+ event.path +' a été modifié');
   });
-  gulp.watch('/js/**/*.js').on('change', browserSync.reload).on('change', function(event) {
+  gulp.watch('./js/**/*.js').on('change', browserSync.reload).on('change', function(event) {
     console.log('le fichier '+ event.path +' a été modifié');
   });
 })
